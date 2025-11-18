@@ -1,0 +1,230 @@
+{
+  "scan_metadata": {
+    "scan_timestamp": "2025-11-18T16:43:03+08:00",
+    "scan_duration": "comprehensive",
+    "total_files_scanned": 47,
+    "coverage_percentage": 100,
+    "truncated": false
+  },
+  "project_overview": {
+    "project_name": "claude-code",
+    "project_type": "plugin-repository",
+    "description": "Claude Code 官方插件集合和示例代码仓库",
+    "main_languages": ["Markdown", "TypeScript", "Python", "Shell", "JSON"],
+    "language_distribution": {
+      "Markdown": 37,
+      "TypeScript": 2,
+      "Python": 2,
+      "Shell": 2,
+      "JSON": 3,
+      "Other": 1
+    }
+  },
+  "modules": [
+    {
+      "path": "plugins/agent-sdk-dev",
+      "name": "Agent SDK Development Plugin",
+      "type": "plugin",
+      "language": "Markdown",
+      "entry_files": ["commands/new-sdk-app.md"],
+      "interface_files": ["commands/new-sdk-app.md", "agents/agent-sdk-verifier-py.md", "agents/agent-sdk-verifier-ts.md"],
+      "test_files": [],
+      "config_files": [".claude-plugin/plugin.json"],
+      "coverage": {
+        "scanned_files": 5,
+        "total_files": 5,
+        "percentage": 100,
+        "gaps": []
+      }
+    },
+    {
+      "path": "plugins/code-review",
+      "name": "Code Review Plugin",
+      "type": "plugin",
+      "language": "Markdown",
+      "entry_files": ["commands/code-review.md"],
+      "interface_files": ["commands/code-review.md"],
+      "test_files": [],
+      "config_files": [".claude-plugin/plugin.json"],
+      "coverage": {
+        "scanned_files": 3,
+        "total_files": 3,
+        "percentage": 100,
+        "gaps": []
+      }
+    },
+    {
+      "path": "plugins/commit-commands",
+      "name": "Commit Commands Plugin",
+      "type": "plugin",
+      "language": "Markdown",
+      "entry_files": ["commands/commit.md", "commands/commit-push-pr.md", "commands/clean_gone.md"],
+      "interface_files": ["commands/commit.md", "commands/commit-push-pr.md", "commands/clean_gone.md"],
+      "test_files": [],
+      "config_files": [".claude-plugin/plugin.json"],
+      "coverage": {
+        "scanned_files": 5,
+        "total_files": 5,
+        "percentage": 100,
+        "gaps": []
+      }
+    },
+    {
+      "path": "plugins/feature-dev",
+      "name": "Feature Development Plugin",
+      "type": "plugin",
+      "language": "Markdown",
+      "entry_files": ["commands/feature-dev.md"],
+      "interface_files": ["commands/feature-dev.md", "agents/code-explorer.md", "agents/code-architect.md", "agents/code-reviewer.md"],
+      "test_files": [],
+      "config_files": [".claude-plugin/plugin.json"],
+      "coverage": {
+        "scanned_files": 6,
+        "total_files": 6,
+        "percentage": 100,
+        "gaps": []
+      }
+    },
+    {
+      "path": "plugins/frontend-design",
+      "name": "Frontend Design Plugin",
+      "type": "plugin",
+      "language": "Markdown",
+      "entry_files": ["skills/frontend-design/SKILL.md"],
+      "interface_files": ["skills/frontend-design/SKILL.md"],
+      "test_files": [],
+      "config_files": [".claude-plugin/plugin.json"],
+      "coverage": {
+        "scanned_files": 3,
+        "total_files": 3,
+        "percentage": 100,
+        "gaps": []
+      }
+    },
+    {
+      "path": "plugins/pr-review-toolkit",
+      "name": "PR Review Toolkit Plugin",
+      "type": "plugin",
+      "language": "Markdown",
+      "entry_files": ["commands/review-pr.md"],
+      "interface_files": ["commands/review-pr.md", "agents/code-reviewer.md", "agents/code-simplifier.md", "agents/comment-analyzer.md", "agents/pr-test-analyzer.md", "agents/silent-failure-hunter.md", "agents/type-design-analyzer.md"],
+      "test_files": [],
+      "config_files": [".claude-plugin/plugin.json"],
+      "coverage": {
+        "scanned_files": 8,
+        "total_files": 8,
+        "percentage": 100,
+        "gaps": []
+      }
+    },
+    {
+      "path": "plugins/security-guidance",
+      "name": "Security Guidance Plugin",
+      "type": "plugin",
+      "language": "Python",
+      "entry_files": ["hooks/security_reminder_hook.py"],
+      "interface_files": ["hooks/security_reminder_hook.py"],
+      "test_files": [],
+      "config_files": [".claude-plugin/plugin.json", "hooks/hooks.json"],
+      "coverage": {
+        "scanned_files": 4,
+        "total_files": 4,
+        "percentage": 100,
+        "gaps": []
+      }
+    },
+    {
+      "path": "plugins/explanatory-output-style",
+      "name": "Explanatory Output Style Plugin",
+      "type": "plugin",
+      "language": "Shell",
+      "entry_files": ["hooks-handlers/session-start.sh"],
+      "interface_files": ["hooks-handlers/session-start.sh"],
+      "test_files": [],
+      "config_files": [".claude-plugin/plugin.json", "hooks/hooks.json"],
+      "coverage": {
+        "scanned_files": 4,
+        "total_files": 4,
+        "percentage": 100,
+        "gaps": []
+      }
+    },
+    {
+      "path": "plugins/learning-output-style",
+      "name": "Learning Output Style Plugin",
+      "type": "plugin",
+      "language": "Shell",
+      "entry_files": ["hooks-handlers/session-start.sh"],
+      "interface_files": ["hooks-handlers/session-start.sh"],
+      "test_files": [],
+      "config_files": [".claude-plugin/plugin.json", "hooks/hooks.json"],
+      "coverage": {
+        "scanned_files": 4,
+        "total_files": 4,
+        "percentage": 100,
+        "gaps": []
+      }
+    },
+    {
+      "path": "scripts",
+      "name": "GitHub Automation Scripts",
+      "type": "scripts",
+      "language": "TypeScript",
+      "entry_files": ["auto-close-duplicates.ts", "backfill-duplicate-comments.ts"],
+      "interface_files": [],
+      "test_files": [],
+      "config_files": [],
+      "coverage": {
+        "scanned_files": 2,
+        "total_files": 2,
+        "percentage": 100,
+        "gaps": []
+      }
+    },
+    {
+      "path": "examples",
+      "name": "Hook Examples",
+      "type": "examples",
+      "language": "Python",
+      "entry_files": ["hooks/bash_command_validator_example.py"],
+      "interface_files": ["hooks/bash_command_validator_example.py"],
+      "test_files": [],
+      "config_files": [],
+      "coverage": {
+        "scanned_files": 2,
+        "total_files": 2,
+        "percentage": 100,
+        "gaps": []
+      }
+    }
+  ],
+  "scan_results": {
+    "total_modules": 11,
+    "fully_covered_modules": 11,
+    "partially_covered_modules": 0,
+    "uncovered_modules": 0,
+    "overall_coverage": 100
+  },
+  "ignored_patterns": [
+    ".DS_Store",
+    "demo.gif"
+  ],
+  "ignored_files_count": 2,
+  "next_scan_priorities": [],
+  "documentation_generated": {
+    "root_claude_md": true,
+    "module_claude_md": 11,
+    "mermaid_diagram": true,
+    "navigation_breadcrumbs": true,
+    "coverage_reports": true
+  },
+  "quality_metrics": {
+    "plugins_with_complete_docs": 9,
+    "plugins_with_agents": 2,
+    "plugins_with_commands": 4,
+    "plugins_with_hooks": 3,
+    "plugins_with_skills": 1,
+    "scripts_with_error_handling": 2,
+    "examples_with_complete_documentation": 1
+  }
+}
